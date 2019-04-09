@@ -19,6 +19,7 @@ for (let pageName in PAGE_ROUTER) {
     },
     output: {
       path: webpackConfig.static ? webpackConfig.static : path.join(ROOT_PATH, '/static/build/'),
+      publicPath: 'http://127.0.0.1:8201/',
       filename: isProd ? `js/${pageName}/[name].[chunkhash:8].js` : `js/${pageName}/[name].js` //static的build目录
     },
     plugins: [
