@@ -1,6 +1,6 @@
 // const path = require('path');
 // const fs = require('fs');
-const H5BaseController = require('@youzan/iron-base/app/controllers/base/H5BaseController');
+const BaseController = require('BaseController');
 
 class RenderController extends H5BaseController {
   async getMasterDetailHtml(ctx) {
